@@ -1,0 +1,10 @@
+- TDD basics
+
+1. Write a test (red)
+2. Make it pass (green)
+3. Refactor (green)
+4. go to 1
+
+Think about what you want your code to be.
+If the problem is too complicated, break it down, take baby stps.
+Try not to test implementation, test behaviour. (This can be difficult)
