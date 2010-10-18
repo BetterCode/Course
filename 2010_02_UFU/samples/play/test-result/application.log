@@ -1,0 +1,9 @@
+04 Out 2010 19:54:01,319 INFO  ~ Starting /Users/andre/Documents/workspace_tees/todo
+04 Out 2010 19:54:01,326 INFO  ~ Module crud is available (/Volumes/dev/play-1.0.3.2/modules/crud)
+04 Out 2010 19:54:02,159 INFO  ~ 
+04 Out 2010 19:54:02,159 INFO  ~ Go to http://localhost:9000/@tests to run the tests
+04 Out 2010 19:54:02,159 INFO  ~ 
+04 Out 2010 19:54:02,159 WARN  ~ You're running Play! in DEV mode
+04 Out 2010 19:54:02,318 INFO  ~ Listening for HTTP on port 9000 (Waiting a first request to start) ...
+04 Out 2010 19:54:16,765 INFO  ~ Connected to jdbc:hsqldb:mem:playembed
+04 Out 2010 19:54:17,809 INFO  ~ Application 'todo' is now started !

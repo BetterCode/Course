@@ -1,0 +1,41 @@
+#{extends 'CRUD/layout.html' /}
+
+<div id="crudList" class="${type.name}">
+	
+	<h2 id="crudListTitle">&{'crud.list.title', type.name}</h2>
+
+	<div id="crudListSearch">
+		#{crud.search /}
+	</div>
+
+	<div id="crudListTable">
+		#{crud.table fields:['executor', 'description', 'started', 'finished'] }
+		#{crud.custom 'started'}
+			#{if !object.isStarted()}
+				<a href="@{Tasks.start(object.id)}"> Start</a>
+			#{/if}
+			#{else}
+				${object.started_at()}
+			#{/else}
+		#{/crud.custom}
+		#{crud.custom 'finished'}
+			#{if !object.isFinished()}
+				<a href="@{Tasks.finish(object.id)}"> Finish</a>
+			#{/if}
+			#{else}
+				${object.finished_at()}
+			#{/else}
+		#{/crud.custom}
+	#{/crud.table}
+
+	</div>
+	
+	<div id="crudListPagination">
+		#{crud.pagination /}
+	</div>
+	
+	<p id="crudListAdd">
+		<a href="@{blank()}">&{'crud.add', type.modelName}</a>
+	</p>
+
+</div>
